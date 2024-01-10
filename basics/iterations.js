@@ -10,8 +10,8 @@ const books = [
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
   ];
 
-  let userbooks = books.filter((bk) => bk.genre === 'Non-Fiction')
-
+//   let userbooks = books.filter((bk) => bk.genre === 'Non-Fiction')
+//   console.log(userbooks)
 //   userbooks = books.filter((bk) => {
 //     return bk.genre === 'Fiction'
 //   })
@@ -19,14 +19,8 @@ const books = [
 //   userbooks = books.filter((bk) => 
 //     {return bk.genre === 'Fiction'}
 //   )
-const myobj = [];
-  userbooks.forEach((bk) => {
-    if(bk.genre === 'History')
-    {
-        myarr.push(bk)
-    }
-    // return bk;
-  })
-  
-  console.log(myarr)
+// const myobj = [];
+
+let newbooks = books.map((bk) => (bk.genre === 'History'))
+console.log(newbooks)
  
